@@ -1,0 +1,192 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(199, 153, 241);
+}
+
+h1{
+    text-align: center;
+    color: rgb(241, 187, 8);
+}
+h2 {
+    font-size:xx-large
+}
+
+header{
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+    background-color: beige;
+}
+header .conteiner {
+    text-size-adjust: 200px;
+    text-decoration-color: burlywood;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .logo {
+    margin: 0;
+    padding: 25px;
+    color: rgb(166, 13, 212);
+    font-size: 3em;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header nav a {
+    text-decoration: none;
+    color: rgb(247, 125, 44);
+    font-weight: 800;
+    padding-right: 30px;
+    background-position: 50px;
+    height: 30px; 
+}
+header a:hover{
+    color: rgb(238, 226, 61);
+}
+#eslogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:url(imagenes/caja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#eslogan h1{
+    font-size: 2em;
+    color: rgb(119, 11, 146);
+}
+
+/* grid*/
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+.personas__columna{
+    margin: 5px;
+}
+.personas__columna:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+.personas .contenedor{
+    display: grid;
+}
+@media (min-width: 520px){
+    .personas .contenedor{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+@media (min-width: 728px){
+    .personas .contenedor{
+        grid-template-columns: repeat(3,33.3%);
+    }
+}
+@media (min-width: 1024px){
+    .personas .contenedor{
+        grid-template-columns: repeat(4,25%);
+    }
+}
+@media (min-width:1200px){
+    .contenedor{
+        width:1200px
+    }
+}
+
+#productos1 {
+    text-align: center;
+    color: rgb(158, 4, 158);
+    background-color: rgb(183, 160, 238);}
+
+    #productos2 {
+        text-align: center;
+        color: rgb(158, 4, 158);
+        background-color: rgb(183, 160, 238);}
+
+        #productos3 {
+            text-align: center;
+            color: rgb(158, 4, 158);
+            background-color: rgb(183, 160, 238);}
+
+    /*grid*/
+
+@media (min-width: 720px){
+    header .conteiner{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+}
+
+footer {
+    background-color: rgb(89, 10, 105);
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: beige;
+}
+.footer.content h3{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.sociales li{
+    margin: 0 1px;
+    padding: 5px;
+}
+.sociales a {
+    text-decoration: none;
+    color: bisque;
+}
+.sociales a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.sociales a:hover{
+    color: blueviolet;
+}
+@media (min-width: 720px){
+    footer .sociales {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+    
+    .sociales a i {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
