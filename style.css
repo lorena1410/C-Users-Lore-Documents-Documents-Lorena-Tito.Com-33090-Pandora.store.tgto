@@ -177,7 +177,7 @@ footer {
     transition: color .4s ease;
 }
 .sociales a:hover{
-    color: blueviolet;
+    color: rgb(110, 32, 184);
 }
 @media (min-width: 720px){
     footer .sociales {
